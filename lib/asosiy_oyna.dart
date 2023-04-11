@@ -354,14 +354,12 @@ class _AsosiyOynaState extends State<AsosiyOyna> {
         children: [
           Container(
             height: 130,
-            child: Expanded(
-              child: ListView.builder(
-                itemCount: tashhis.length,
-                itemBuilder: (context, index) => Container(
-                  child: Card(
-                    child: ListTile(
-                      title: Text("${tashhis[index]}"),
-                    ),
+            child: ListView.builder(
+              itemCount: tashhis.length,
+              itemBuilder: (context, index) => Container(
+                child: Card(
+                  child: ListTile(
+                    title: Text("${tashhis[index]}"),
                   ),
                 ),
               ),
